@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+<title>Truyum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .material-icons {
+    vertical-align: middle;
+    font-size: 0.01 em;
+    }
+    </style>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md" style="background-color:crimson;">
+      <a href="#" class="navbar-brand">
+        <img src="/images/truyum.png" height="28" alt="CoolBrand">
+      </a>
+      <a class="navbar-brand" href="/index.html" style="color: white;">truYum</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="container">
+        <h3>Edit Menu Items</h3>
+        
+        <form class="md-form" id="employeeform">
+            <div class="container mt-3">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="demo-content">
+                            <label>Item Name:</label><br>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="demo-content">
+                            <label>Price:</label><br>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="demo-content bg-alt">
+                            <label>Date of Birth:</label><br>
+                            <input id="datepicker" class="form-control"/>
+                            <script>
+                                $('#datepicker').datepicker({
+                                uiLibrary: 'bootstrap4',
+                                format: 'dd/mm/yyyy'
+                                });  
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="demo-content">
+                            <label>Category:</label><br>
+                            <select id="department" class="form-control">
+                                <option value="one">A</option>
+                                <option value="two">B</option>
+                                <option value="three">C</option>
+                                <option value="four">D</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="demo-content bg-alt">
+                            <label>Active:</label>:</label><br>
+                            <input type="radio" id="yes" name="active" value="yes">
+                            <label for="yes">Yes</label>&nbsp;&nbsp;
+                            <input type="radio" id="no" name="active" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-3">
+                    <div class="demo-content bg-alt">
+                        <input type="checkbox">  
+                        <label>Free Delivery</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="demo-content bg-alt">
+                            <button type="button" id="btn" class="btn btn-primary" >Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <br>
+    <footer class="footer" style="position: fixed; left: 0; bottom: 0; width: 100%; background-color:crimson; color: white; text-align: center; height:6%; ">
+        <div class="footer-copyright py-3">© 2020 Copyright:
+        </div>
+    </footer>
+  </footer>
+</body>
+</html>
